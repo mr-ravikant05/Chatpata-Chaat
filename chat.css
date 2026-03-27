@@ -1,0 +1,283 @@
+/* =============================================
+   CHAT ITEMS PAGE — Chatpata Chat
+   ============================================= */
+
+/* ---- Menu Hero ---- */
+.menu-hero {
+  min-height: 55vh;
+  background: linear-gradient(135deg, var(--text) 0%, #3D2416 100%);
+  display: flex;
+  align-items: center;
+  padding: 120px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.menu-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.pexels.com/photos/36575097/pexels-photo-36575097.jpeg?auto=compress&cs=tinysrgb&w=1400') center/cover no-repeat;
+  opacity: 0.18;
+}
+.menu-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.menu-hero .section-tag { background: rgba(247,127,0,0.2); color: var(--secondary); }
+.menu-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0.75rem 0;
+}
+.menu-hero-title span { color: var(--secondary); }
+.menu-hero-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 480px;
+  line-height: 1.75;
+}
+
+/* ---- Categories ---- */
+.categories {
+  padding: 4rem 0;
+  background: var(--bg-alt);
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+}
+.cat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem 0.75rem;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid transparent;
+  text-align: center;
+}
+.cat-item:hover, .cat-item.active {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+.cat-item.active .cat-icon { background: var(--primary); color: #fff; }
+.cat-icon {
+  width: 52px; height: 52px;
+  background: rgba(214,40,40,0.08);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  color: var(--primary);
+  transition: var(--transition);
+}
+.cat-item:hover .cat-icon { background: var(--primary); color: #fff; }
+.cat-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+.cat-item:hover .cat-label, .cat-item.active .cat-label { color: var(--primary); }
+
+/* ---- Food Listing ---- */
+.food-listing {
+  padding: 5rem 0;
+  background: var(--bg);
+}
+.food-list { display: flex; flex-direction: column; gap: 1.5rem; }
+.food-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.food-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(214,40,40,0.15);
+}
+.food-card-img-wrap { position: relative; overflow: hidden; }
+.food-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.food-card:hover .food-card-img { transform: scale(1.07); }
+.food-card-badge {
+  position: absolute;
+  top: 10px; left: 10px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.food-card-badge.spicy { background: var(--primary); }
+.food-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.food-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.food-card-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+.food-card-price {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.food-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.food-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+.qty-btn {
+  width: 36px; height: 36px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.qty-btn:hover { background: var(--bg-alt); color: var(--primary); }
+.qty-value {
+  min-width: 36px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  border-left: 1.5px solid var(--border);
+  border-right: 1.5px solid var(--border);
+  line-height: 36px;
+}
+
+/* ---- Ingredients & Purity ---- */
+.ingredients {
+  padding: 5rem 0;
+  background: var(--bg-alt);
+}
+.ingredients-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.ingredients-image-wrap { position: relative; }
+.ingredients-image-wrap img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 60px rgba(43,30,22,0.14);
+}
+.veg-seal {
+  position: absolute;
+  bottom: -20px; right: -20px;
+  width: 90px; height: 90px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  box-shadow: 0 8px 20px rgba(45,157,95,0.4);
+  border: 4px solid #fff;
+  z-index: 1;
+}
+.veg-seal span:first-child { font-size: 1.4rem; color: #fff; }
+.veg-seal span:last-child { font-size: 0.6rem; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 0.04em; text-align: center; }
+.ingredients-points { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
+.ingr-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+.ingr-point:hover { box-shadow: var(--shadow-soft); transform: translateX(4px); }
+.ingr-icon {
+  width: 42px; height: 42px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.ingr-icon-1 { background: rgba(45,157,95,0.1); color: var(--accent); }
+.ingr-icon-2 { background: rgba(214,40,40,0.08); color: var(--primary); }
+.ingr-icon-3 { background: rgba(247,127,0,0.1); color: var(--secondary); }
+.ingr-icon-4 { background: rgba(43,30,22,0.06); color: var(--text); }
+.ingr-point h4 { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+.ingr-point p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.5; }
+
+/* =============================================
+   RESPONSIVE — CHAT
+   ============================================= */
+@media (max-width: 1024px) {
+  .categories-grid { grid-template-columns: repeat(4, 1fr); }
+  .ingredients-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .ingredients-image-wrap img { max-height: 340px; object-fit: cover; }
+  .veg-seal { bottom: -15px; right: 10px; }
+}
+
+@media (max-width: 768px) {
+  .categories-grid { grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+  .food-card { grid-template-columns: 140px 1fr; }
+  .food-card-img { min-height: 140px; }
+  .food-card-body { padding: 1.1rem; }
+}
+
+@media (max-width: 540px) {
+  .categories-grid { grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+  .cat-icon { width: 42px; height: 42px; font-size: 1rem; }
+  .food-card { grid-template-columns: 1fr; }
+  .food-card-img { min-height: 180px; width: 100%; }
+  .food-card-footer { flex-direction: column; align-items: flex-start; }
+}

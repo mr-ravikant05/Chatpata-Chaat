@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chatpata Chat – Pure vegetarian fast food corner in Rewari, Haryana. Burgers, momos, pizza, chaat and more!">
+  <title>Chatpata Chat – Pure Veg Fast Food, Rewari</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- NAV OVERLAY -->
+  <div id="navOverlay" class="nav-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" data-testid="nav-logo">
+        <span class="c1">Chatpata</span><span class="c2">Chaat</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" data-testid="nav-toggle-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html" class="nav-link" data-testid="nav-home">Home</a></li>
+        <li><a href="chat.html" class="nav-link" data-testid="nav-chat-items">Chaat-Items</a></li>
+        <li><a href="about.html" class="nav-link" data-testid="nav-about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-image-wrap">
+        <img
+          src="https://images.pexels.com/photos/5639459/pexels-photo-5639459.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Chatpata Chat signature burger"
+          class="hero-img"
+          data-testid="hero-burger-img"
+        >
+      </div>
+      <div class="hero-content">
+        <div class="offer-badge" data-testid="offer-badge">
+          <i class="fas fa-fire"></i> 20% OFF Today Only
+        </div>
+        <h1 class="hero-title">
+          Real Street Food<br><span>Real Happiness</span>
+        </h1>
+        <p class="hero-sub">Crispy. Spicy. 100% Vegetarian.</p>
+        <p class="hero-desc">
+          From mouth-watering momos to spicy burgers and classic chaat — Chatpata Chat brings the best of Rewari's street flavours, freshly made for you every day.
+        </p>
+        <div class="hero-btns">
+          <a href="about.html" class="btn btn-outline" data-testid="hero-about-btn">
+            <i class="fas fa-info-circle"></i> About Chat
+          </a>
+          <a
+            href="https://wa.me/919876543210?text=Hi%20Chatpata%20Chat!%20I%27d%20like%20to%20place%20an%20order.%20Please%20share%20the%20menu."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="hero-order-btn"
+          >
+            <i class="fab fa-whatsapp"></i> Order Chat
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO BAR -->
+  <div class="info-bar" data-testid="info-bar">
+    <div class="info-bar-inner">
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="info-text">
+          <strong>Find Us</strong>
+          <span>Near Bus Stand, Rewari, Haryana</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-clock"></i></div>
+        <div class="info-text">
+          <strong>Opening Hours</strong>
+          <span>Mon – Sun: 10:00 AM – 10:00 PM</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fas fa-phone"></i></div>
+        <div class="info-text">
+          <strong>Call / WhatsApp</strong>
+          <span>+91 93069 98524 , +91 86074 30153</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED DISHES -->
+  <section class="featured" id="featured">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag reveal">Our Favourites</span>
+        <h2 class="section-title reveal">Featured Dishes</h2>
+        <p class="section-subtitle reveal">Handpicked bestsellers — fresh, tasty, and loved by thousands of customers in Rewari.</p>
+      </div>
+      <div class="dishes-grid">
+
+        <!-- Card 1 -->
+        <article class="dish-card reveal delay-1" data-testid="dish-card-1">
+          <div class="dish-card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1660715683888-8e506d6898c8?w=600&q=80"
+              alt="Aloo Tikki Burger"
+              class="dish-card-img"
+              loading="lazy"
+            >
+            <span class="dish-veg-badge">Veg</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-name">Aloo Tikki Burger</h3>
+            <p class="dish-card-desc">Crispy potato tikki in a soft sesame bun with tangy chutney and fresh veggies.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price"><sup>₹</sup>80</span>
+             
+              <a href="chat.html" class="btn btn-primary btn-sm dish-order-btn">
+                <i class="fas fa-shopping-bag"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="dish-card reveal delay-2" data-testid="dish-card-2">
+          <div class="dish-card-img-wrap">
+            <img
+              src="https://images.pexels.com/photos/3911228/pexels-photo-3911228.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Steamed Momos"
+              class="dish-card-img"
+              loading="lazy"
+            >
+            <span class="dish-veg-badge">Veg</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-name">Steamed Momos</h3>
+            <p class="dish-card-desc">8 soft steamed dumplings with a spiced vegetable filling and fiery red chutney.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price"><sup>₹</sup>100</span>
+              <a href="chat.html"  class="btn btn-primary btn-sm dish-order-btn">
+                <i class="fas fa-shopping-bag"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="dish-card reveal delay-3" data-testid="dish-card-3">
+          <div class="dish-card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1595378833483-c995dbe4d74f?w=600&q=80"
+              alt="Veg Pizza"
+              class="dish-card-img"
+              loading="lazy"
+            >
+            <span class="dish-veg-badge">Veg</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-name">Veg Pizza (6&quot;)</h3>
+            <p class="dish-card-desc">Thin-crust pizza loaded with fresh veggies, corn, and generous mozzarella cheese.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price"><sup>₹</sup>150</span>
+              <a href="chat.html" class="btn btn-primary btn-sm dish-order-btn">
+                <i class="fas fa-shopping-bag"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="dish-card reveal delay-4" data-testid="dish-card-4">
+          <div class="dish-card-img-wrap">
+            <img
+              src="https://images.pexels.com/photos/36576777/pexels-photo-36576777.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Pani Puri"
+              class="dish-card-img"
+              loading="lazy"
+            >
+            <span class="dish-veg-badge">Veg</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-name">Pani Puri (8 pcs)</h3>
+            <p class="dish-card-desc">Classic crispy pooris with tangy tamarind water, potato filling, and sweet chutney.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price"><sup>₹</sup>50</span>
+              <a href="chat.html" class="btn btn-primary btn-sm dish-order-btn">
+                <i class="fas fa-shopping-bag"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="dish-card reveal delay-5" data-testid="dish-card-5">
+          <div class="dish-card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1617622141573-2e00d8818f3f?w=600&q=80"
+              alt="Veg Hakka Noodles"
+              class="dish-card-img"
+              loading="lazy"
+            >
+            <span class="dish-veg-badge">Veg</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-name">Veg Hakka Noodles</h3>
+            <p class="dish-card-desc">Wok-tossed noodles with crunchy vegetables, dark soy sauce, and aromatic spices.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price"><sup>₹</sup>110</span>
+              <a href="chat.html" class="btn btn-primary btn-sm dish-order-btn">
+                <i class="fas fa-shopping-bag"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="dish-card reveal delay-6" data-testid="dish-card-6">
+          <div class="dish-card-img-wrap">
+            <img
+              src="https://images.pexels.com/photos/36268502/pexels-photo-36268502.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Veg Wrap Frankie"
+              class="dish-card-img"
+              loading="lazy"
+            >
+            <span class="dish-veg-badge">Veg</span>
+          </div>
+          <div class="dish-card-body">
+            <h3 class="dish-card-name">Veg Wrap / Frankie</h3>
+            <p class="dish-card-desc">Grilled tortilla wrap stuffed with spiced paneer, veggies, and tangy sauces.</p>
+            <div class="dish-card-footer">
+              <span class="dish-price"><sup>₹</sup>100</span>
+              <a href="chat.html" class="btn btn-primary btn-sm dish-order-btn">
+                <i class="fas fa-shopping-bag"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="chat.html" class="btn btn-outline btn-lg" data-testid="view-all-menu-btn">
+          View Full Menu <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag reveal">Why We're Special</span>
+        <h2 class="section-title reveal">Why Choose Chatpata Chat?</h2>
+        <p class="section-subtitle reveal">We don't just serve food — we serve love, hygiene, and unbeatable taste.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal delay-1" data-testid="why-card-1">
+          <div class="why-icon why-icon-1">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>100% Pure Vegetarian</h3>
+          <p>Completely meat-free kitchen. Every ingredient is carefully selected for the purest veg experience.</p>
+        </div>
+        <div class="why-card reveal delay-2" data-testid="why-card-2">
+          <div class="why-icon why-icon-2">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Fresh Daily Ingredients</h3>
+          <p>We source fresh vegetables and ingredients every morning. No frozen, no leftover — always fresh.</p>
+        </div>
+        <div class="why-card reveal delay-3" data-testid="why-card-3">
+          <div class="why-icon why-icon-3">
+            <i class="fas fa-shield-heart"></i>
+          </div>
+          <h3>Hygienic Kitchen</h3>
+          <p>Our cooking space is cleaned multiple times daily. We follow strict food safety standards every hour.</p>
+        </div>
+        <div class="why-card reveal delay-4" data-testid="why-card-4">
+          <div class="why-icon why-icon-4">
+            <i class="fas fa-tag"></i>
+          </div>
+          <h3>Pocket-Friendly Prices</h3>
+          <p>Great taste doesn't have to be expensive. Our menu starts at just ₹50, perfect for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFER -->
+  <section class="special-offer">
+    <div class="offer-inner">
+      <div class="offer-content reveal-left">
+        <span class="offer-label"><i class="fas fa-bolt"></i> Limited Time Offer</span>
+        <h2>Get <span>20% OFF</span><br>on Your First Order!</h2>
+        <p>Order via WhatsApp today and enjoy 20% off your entire bill. Use code <strong>CHATPATA20</strong> when you message us.</p>
+      </div>
+      <div class="reveal-right">
+        <a
+          href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20use%20code%20CHATPATA20%20for%2020%25%20OFF%20on%20my%20first%20order%20at%20Chatpata%20Chat!"
+          class="btn btn-secondary btn-lg"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="special-offer-btn"
+        >
+          <i class="fab fa-whatsapp"></i> Claim Offer Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag reveal">What People Say</span>
+        <h2 class="section-title reveal">Customer Love</h2>
+        <p class="section-subtitle reveal">Real reviews from our happy customers in Rewari and beyond.</p>
+      </div>
+      <div class="testi-grid">
+
+        <div class="testi-card reveal delay-1" data-testid="testi-card-1">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Best momos I've had in Rewari! The spicy chutney is absolutely incredible. I order here every week without fail.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">P</div>
+            <div>
+              <span class="testi-name">Priya Sharma</span>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal delay-2" data-testid="testi-card-2">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Ordered three times this week! The paneer burger is outstanding — crispy, juicy and packed with flavour. Very affordable too.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--secondary);">R</div>
+            <div>
+              <span class="testi-name">Rahul Kumar</span>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal delay-3" data-testid="testi-card-3">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Clean, tasty, and so affordable. My whole family loves Chatpata Chat. The pani puri is exactly like the ones we had growing up!</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--accent);">S</div>
+            <div>
+              <span class="testi-name">Sunita Devi</span>
+              <div class="testi-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta-inner reveal">
+      <span class="section-tag">Ready to Eat?</span>
+      <h2 class="section-title">Hungry? <span>Order Now</span> in Seconds!</h2>
+      <p>Skip the wait — message us on WhatsApp and your fresh, spicy food will be ready for pickup. No app needed.</p>
+      <div class="cta-btns">
+        <a
+          href="https://wa.me/919876543210?text=Hi%20Chatpata%20Chat!%20I%27d%20like%20to%20order%20some%20food.%20Can%20you%20send%20me%20the%20menu?"
+          class="btn btn-primary btn-lg"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="final-cta-order-btn"
+        >
+          <i class="fab fa-whatsapp"></i> Order on WhatsApp
+        </a>
+        <a href="chat.html" class="btn btn-outline btn-lg" data-testid="final-cta-menu-btn">
+          <i class="fas fa-utensils"></i> Browse Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <div>
+        <a href="index.html" class="footer-logo"><span>Chatpata</span><em>Chat</em></a>
+        <p class="footer-desc">Pure vegetarian fast food corner in Rewari, Haryana. Fresh ingredients, hygienic kitchen, pocket-friendly prices.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" data-testid="footer-instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" data-testid="footer-facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp" data-testid="footer-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-testid="footer-link-home">Home</a></li>
+          <li><a href="chat.html" data-testid="footer-link-menu">Chat-Items</a></li>
+          <li><a href="about.html" data-testid="footer-link-about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Near Bus Stand, Rewari, Haryana – 123401</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 93069 98524 
+                +91 86074 30153</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>chatpatachat@gmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-clock"></i>
+          <span>Mon – Sun: 10AM – 10PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Chatpata Chat. All rights reserved. | Made with <i class="fas fa-heart" style="color:var(--primary)"></i> By Deepanshu and Sashikant from GPD</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="home.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>

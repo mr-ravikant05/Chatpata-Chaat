@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chatpata Chat menu – 100% vegetarian burgers, pizza, momos, chaat, noodles & more. Order from Rewari, Haryana.">
+  <title>Chat-Items Menu – Chatpata Chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+  <!-- NAV OVERLAY -->
+  <div id="navOverlay" class="nav-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" data-testid="nav-logo">
+        <span class="c1">Chatpata</span><span class="c2">Chaat</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" data-testid="nav-toggle-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html" class="nav-link" data-testid="nav-home">Home</a></li>
+        <li><a href="chat.html" class="nav-link" data-testid="nav-chat-items">Chaat-Items</a></li>
+        <li><a href="about.html" class="nav-link" data-testid="nav-about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MENU HERO -->
+  <section class="menu-hero">
+    <div class="menu-hero-inner">
+      <span class="section-tag">Pure Vegetarian</span>
+      <h1 class="menu-hero-title">Our <span>Chatpata</span><br>Chat-Items Menu</h1>
+      <p class="menu-hero-sub">15 freshly prepared vegetarian fast food items — spicy, crispy, and made with love every single day.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag reveal">Browse By Type</span>
+        <h2 class="section-title reveal">What Are You Craving?</h2>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-item active reveal delay-1" data-filter="all" data-testid="cat-all">
+          <div class="cat-icon"><i class="fas fa-utensils"></i></div>
+          <span class="cat-label">All Items</span>
+        </div>
+        <div class="cat-item reveal delay-1" data-filter="burger" data-testid="cat-burger">
+          <div class="cat-icon"><i class="fas fa-burger"></i></div>
+          <span class="cat-label">Burgers</span>
+        </div>
+        <div class="cat-item reveal delay-2" data-filter="pizza" data-testid="cat-pizza">
+          <div class="cat-icon"><i class="fas fa-pizza-slice"></i></div>
+          <span class="cat-label">Pizza</span>
+        </div>
+        <div class="cat-item reveal delay-2" data-filter="sandwich" data-testid="cat-sandwich">
+          <div class="cat-icon"><i class="fas fa-bread-slice"></i></div>
+          <span class="cat-label">Sandwich</span>
+        </div>
+        <div class="cat-item reveal delay-3" data-filter="fries" data-testid="cat-fries">
+          <div class="cat-icon"><i class="fas fa-bowl-food"></i></div>
+          <span class="cat-label">Fries</span>
+        </div>
+        <div class="cat-item reveal delay-3" data-filter="noodles" data-testid="cat-noodles">
+          <div class="cat-icon"><i class="fas fa-bowl-rice"></i></div>
+          <span class="cat-label">Noodles</span>
+        </div>
+        <div class="cat-item reveal delay-4" data-filter="chaat" data-testid="cat-chaat">
+          <div class="cat-icon"><i class="fas fa-pepper-hot"></i></div>
+          <span class="cat-label">Chaat</span>
+        </div>
+        <div class="cat-item reveal delay-4" data-filter="momos" data-testid="cat-momos">
+          <div class="cat-icon"><i class="fas fa-circle-dot"></i></div>
+          <span class="cat-label">Momos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD LISTING -->
+  <section class="food-listing" id="menu">
+    <div class="section-wrap">
+      <div class="section-header">
+        <span class="section-tag reveal">100% Vegetarian</span>
+        <h2 class="section-title reveal">Full Menu</h2>
+        <p class="section-subtitle reveal">Select any item, choose your quantity, and order directly on WhatsApp in seconds!</p>
+      </div>
+      <div class="food-list">
+
+        <!-- 1. Aloo Tikki Burger -->
+        <article class="food-card reveal" data-category="burger" data-testid="food-item-1">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1660715683888-8e506d6898c8?w=400&q=80" alt="Aloo Tikki Burger" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Bestseller</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Aloo Tikki Burger</h3>
+              <span class="food-card-price">₹80</span>
+            </div>
+            <p class="food-card-desc">Crispy spiced potato tikki in a soft sesame bun with green chutney, tomato ketchup and crunchy lettuce.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-1">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-1" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-1">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-1" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Aloo Tikki Burger" data-price="80" data-testid="food-order-1">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Paneer Burger -->
+        <article class="food-card reveal" data-category="burger" data-testid="food-item-2">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/5639672/pexels-photo-5639672.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Paneer Burger" class="food-card-img" loading="lazy">
+            <span class="food-card-badge spicy">Spicy</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Paneer Burger</h3>
+              <span class="food-card-price">₹120</span>
+            </div>
+            <p class="food-card-desc">Juicy grilled paneer patty with sriracha mayo, crispy onion rings, and fresh coleslaw in a toasted bun.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-2">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-2" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-2">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-2" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Paneer Burger" data-price="120" data-testid="food-order-2">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Cheese Veggie Burger -->
+        <article class="food-card reveal" data-category="burger" data-testid="food-item-3">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/5639468/pexels-photo-5639468.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cheese Veggie Burger" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">New</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Cheese Veggie Burger</h3>
+              <span class="food-card-price">₹100</span>
+            </div>
+            <p class="food-card-desc">Double cheese-stuffed veggie patty with jalapenos, caramelised onions, and tangy burger sauce.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-3">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-3" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-3">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-3" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Cheese Veggie Burger" data-price="100" data-testid="food-order-3">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Veg Pizza -->
+        <article class="food-card reveal" data-category="pizza" data-testid="food-item-4">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1595378833483-c995dbe4d74f?w=400&q=80" alt="Veg Pizza" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Popular</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Veg Pizza (6&quot;)</h3>
+              <span class="food-card-price">₹150</span>
+            </div>
+            <p class="food-card-desc">Thin-crust pizza with tomato base, mozzarella, capsicum, corn, onions, and olives.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-4">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-4" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-4">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-4" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Veg Pizza 6 inch" data-price="150" data-testid="food-order-4">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Peri Peri Pizza -->
+        <article class="food-card reveal" data-category="pizza" data-testid="food-item-5">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1672856399643-47ddf6b2d6d6?w=400&q=80" alt="Peri Peri Pizza" class="food-card-img" loading="lazy">
+            <span class="food-card-badge spicy">Spicy</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Peri Peri Pizza (6&quot;)</h3>
+              <span class="food-card-price">₹170</span>
+            </div>
+            <p class="food-card-desc">Fiery peri peri sauce base with roasted peppers, mushrooms, and extra cheese. Bold and intense!</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-5">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-5" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-5">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-5" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Peri Peri Pizza 6 inch" data-price="170" data-testid="food-order-5">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Veg Club Sandwich -->
+        <article class="food-card reveal" data-category="sandwich" data-testid="food-item-6">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/36268518/pexels-photo-36268518.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Veg Club Sandwich" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Classic</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Veg Club Sandwich</h3>
+              <span class="food-card-price">₹90</span>
+            </div>
+            <p class="food-card-desc">Triple-decker toasted bread with lettuce, tomato, cucumber, cheese slices, and zesty mayo.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-6">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-6" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-6">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-6" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Veg Club Sandwich" data-price="90" data-testid="food-order-6">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Grilled Cheese Sandwich -->
+        <article class="food-card reveal" data-category="sandwich" data-testid="food-item-7">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1700937244987-92488ab2ada5?w=400&q=80" alt="Grilled Cheese Sandwich" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Bestseller</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Grilled Cheese Sandwich</h3>
+              <span class="food-card-price">₹100</span>
+            </div>
+            <p class="food-card-desc">Golden-grilled bread stuffed with melted cheese, tomato, and spiced capsicum mix.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-7">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-7" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-7">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-7" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Grilled Cheese Sandwich" data-price="100" data-testid="food-order-7">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Crispy French Fries -->
+        <article class="food-card reveal" data-category="fries" data-testid="food-item-8">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1707773726979-4b87cd1c838a?w=400&q=80" alt="Crispy French Fries" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Classic</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Crispy French Fries</h3>
+              <span class="food-card-price">₹70</span>
+            </div>
+            <p class="food-card-desc">Golden, crispy potato fries served with ketchup and mint dip. Perfectly salted every time.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-8">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-8" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-8">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-8" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Crispy French Fries" data-price="70" data-testid="food-order-8">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Peri Peri Fries -->
+        <article class="food-card reveal" data-category="fries" data-testid="food-item-9">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1734774797087-b6435057a15e?w=400&q=80" alt="Peri Peri Fries" class="food-card-img" loading="lazy">
+            <span class="food-card-badge spicy">Spicy</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Peri Peri Fries</h3>
+              <span class="food-card-price">₹90</span>
+            </div>
+            <p class="food-card-desc">Crispy fries tossed in fiery peri peri masala, topped with a squeeze of lemon and chilli flakes.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-9">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-9" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-9">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-9" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Peri Peri Fries" data-price="90" data-testid="food-order-9">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Veg Hakka Noodles -->
+        <article class="food-card reveal" data-category="noodles" data-testid="food-item-10">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1617622141573-2e00d8818f3f?w=400&q=80" alt="Veg Hakka Noodles" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Popular</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Veg Hakka Noodles</h3>
+              <span class="food-card-price">₹110</span>
+            </div>
+            <p class="food-card-desc">Wok-tossed noodles with cabbage, carrots, capsicum, dark soy and sesame oil. A street-food favourite.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-10">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-10" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-10">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-10" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Veg Hakka Noodles" data-price="110" data-testid="food-order-10">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Chilli Cheese Noodles -->
+        <article class="food-card reveal" data-category="noodles" data-testid="food-item-11">
+          <div class="food-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1617622141675-d3005b9067c5?w=400&q=80" alt="Chilli Cheese Noodles" class="food-card-img" loading="lazy">
+            <span class="food-card-badge spicy">Spicy</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Chilli Cheese Noodles</h3>
+              <span class="food-card-price">₹140</span>
+            </div>
+            <p class="food-card-desc">Spicy schezwan noodles topped with melted cheese, green chillies, and a drizzle of hot sauce.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-11">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-11" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-11">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-11" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Chilli Cheese Noodles" data-price="140" data-testid="food-order-11">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Pani Puri -->
+        <article class="food-card reveal" data-category="chaat" data-testid="food-item-12">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/36576777/pexels-photo-36576777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pani Puri" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Bestseller</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Pani Puri (8 pcs)</h3>
+              <span class="food-card-price">₹50</span>
+            </div>
+            <p class="food-card-desc">Classic crispy pooris filled with spiced potato, tangy tamarind water, and sweet chutney. Pure nostalgia.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-12">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-12" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-12">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-12" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Pani Puri 8 pieces" data-price="50" data-testid="food-order-12">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. Bhel Puri -->
+        <article class="food-card reveal" data-category="chaat" data-testid="food-item-13">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/36576773/pexels-photo-36576773.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bhel Puri" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Classic</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Bhel Puri</h3>
+              <span class="food-card-price">₹60</span>
+            </div>
+            <p class="food-card-desc">Light puffed rice tossed with sev, onions, tomatoes, raw mango, chutneys, and a sprinkle of chaat masala.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-13">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-13" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-13">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-13" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Bhel Puri" data-price="60" data-testid="food-order-13">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14. Steamed Momos -->
+        <article class="food-card reveal" data-category="momos" data-testid="food-item-14">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/3911228/pexels-photo-3911228.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Steamed Momos" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Bestseller</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Steamed Momos (8 pcs)</h3>
+              <span class="food-card-price">₹100</span>
+            </div>
+            <p class="food-card-desc">Soft steamed dumplings filled with spiced veggies, cabbage, and paneer. Served with fiery red chutney.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-14">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-14" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-14">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-14" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Steamed Momos 8 pieces" data-price="100" data-testid="food-order-14">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 15. Veg Wrap / Frankie -->
+        <article class="food-card reveal" data-category="sandwich" data-testid="food-item-15">
+          <div class="food-card-img-wrap">
+            <img src="https://images.pexels.com/photos/36268502/pexels-photo-36268502.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Veg Wrap Frankie" class="food-card-img" loading="lazy">
+            <span class="food-card-badge">Popular</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-top">
+              <h3 class="food-card-name">Veg Wrap / Frankie</h3>
+              <span class="food-card-price">₹100</span>
+            </div>
+            <p class="food-card-desc">Grilled tortilla wrap loaded with spiced paneer, bell peppers, onions, and our secret chatpata sauce.</p>
+            <div class="food-card-footer">
+              <div class="qty-control" data-testid="qty-control-15">
+                <button class="qty-btn qty-decrease" data-testid="qty-decrease-15" aria-label="Decrease quantity">−</button>
+                <span class="qty-value" data-testid="qty-value-15">1</span>
+                <button class="qty-btn qty-increase" data-testid="qty-increase-15" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="btn btn-accent btn-sm food-order-btn" data-item="Veg Wrap Frankie" data-price="100" data-testid="food-order-15">
+                <i class="fa-solid fa-cart-shopping"></i> Order
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENTS & PURITY -->
+  <section class="ingredients">
+    <div class="section-wrap">
+      <div class="ingredients-inner">
+        <div class="reveal-left">
+          <div class="ingredients-image-wrap">
+            <img
+              src="https://images.pexels.com/photos/5639672/pexels-photo-5639672.jpeg?auto=compress&cs=tinysrgb&w=700"
+              alt="Fresh vegetarian ingredients"
+              loading="lazy"
+            >
+            <div class="veg-seal">
+              <span><i class="fas fa-leaf"></i></span>
+              <span>100% Pure Veg</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <span class="section-tag">Pure &amp; Clean</span>
+          <h2 class="section-title">Our Ingredients &amp; Purity Promise</h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin:1rem 0 1.5rem;">
+            At Chatpata Chat, purity isn't just a promise — it's our foundation. Every item on our menu is 100% vegetarian, prepared in a dedicated meat-free kitchen.
+          </p>
+          <div class="ingredients-points">
+            <div class="ingr-point">
+              <div class="ingr-icon ingr-icon-1"><i class="fas fa-seedling"></i></div>
+              <div>
+                <h4>Farm-Fresh Vegetables Daily</h4>
+                <p>We source fresh vegetables every morning from local markets. No frozen or pre-cut produce — everything is cut fresh on the day of use.</p>
+              </div>
+            </div>
+            <div class="ingr-point">
+              <div class="ingr-icon ingr-icon-2"><i class="fas fa-shield-heart"></i></div>
+              <div>
+                <h4>Hygienic Preparation Standards</h4>
+                <p>Our kitchen is sanitised multiple times daily. Cooks maintain strict personal hygiene and use gloves for all food preparation.</p>
+              </div>
+            </div>
+            <div class="ingr-point">
+              <div class="ingr-icon ingr-icon-3"><i class="fas fa-fire-flame-curved"></i></div>
+              <div>
+                <h4>No MSG – Natural Spices Only</h4>
+                <p>We never use artificial flavour enhancers. All spice blends are prepared in-house from whole spices for genuine, natural flavour.</p>
+              </div>
+            </div>
+            <div class="ingr-point">
+              <div class="ingr-icon ingr-icon-4"><i class="fas fa-star"></i></div>
+              <div>
+                <h4>Quality Assured Every Batch</h4>
+                <p>Every dish is taste-tested before it leaves the kitchen. We believe in consistency — your 10th order should taste as good as your first.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <div>
+        <a href="index.html" class="footer-logo"><span>Chatpata</span><em>Chat</em></a>
+        <p class="footer-desc">Pure vegetarian fast food corner in Rewari, Haryana. Fresh ingredients, hygienic kitchen, pocket-friendly prices.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" data-testid="footer-instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" data-testid="footer-facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp" data-testid="footer-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-testid="footer-link-home">Home</a></li>
+          <li><a href="chat.html" data-testid="footer-link-menu">Chat-Items</a></li>
+          <li><a href="about.html" data-testid="footer-link-about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Near Bus Stand, Rewari, Haryana – 123401</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 93069 98524 ,
+                +91 86074 30153</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>chatpatachat@gmail.com</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon – Sun: 10AM – 10PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Chatpata Chat. All rights reserved. | Made with <i class="fas fa-heart" style="color:var(--primary)"></i> By Deepanshu and Sashikant from GPD</p>
+    </div>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="chat.js"></script>
+  <script src="main.js"></script>
+  <div class="order-popup" id="orderPopup">
+  <div class="order-popup-box">
+    <button class="popup-close" id="closeOrderPopup" type="button">&times;</button>
+
+    <h3>Place Your Order</h3>
+    <p class="popup-subtext">Fill your details below.</p>
+
+    <form id="orderForm">
+      <div class="popup-field">
+        <label>Item Name</label>
+        <input type="text" id="popupItemName" readonly>
+      </div>
+
+      <div class="popup-field">
+        <label>Price</label>
+        <input type="text" id="popupItemPrice" readonly>
+      </div>
+
+      <div class="popup-field">
+        <label>Quantity</label>
+        <div class="popup-qty">
+          <button type="button" id="popupMinus">-</button>
+          <input type="number" id="popupQuantity" value="1" readonly>
+          <button type="button" id="popupPlus">+</button>
+        </div>
+      </div>
+
+      <div class="popup-field">
+        <label>Your Name</label>
+        <input type="text" id="customerName" placeholder="Enter your name" required>
+      </div>
+
+      <div class="popup-field">
+        <label>Phone Number</label>
+        <input type="tel" id="customerPhone" placeholder="Enter phone number" required>
+      </div>
+
+      <div class="popup-field">
+        <label>Address</label>
+        <textarea id="customerAddress" rows="3" placeholder="Enter address" required></textarea>
+      </div>
+
+      <div class="popup-total">
+        Total: ₹<span id="popupTotal">0</span>
+      </div>
+
+      <button type="submit" class="confirm-order-btn">Confirm Order</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
